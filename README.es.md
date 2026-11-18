@@ -2,7 +2,7 @@
 
 **Skills reutilizables para agentes de programación: definir el trabajo, retomarlo con contexto y verificar lo entregado.**
 
-[English](README.md) · [Instalación](docs/installation.md) · [Demo local](examples/cart/README.md) · [Validación](docs/validation.md)
+[English](README.md) · [Descargar v0.1.0](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.0) · [Instalación](docs/installation.md) · [Demo local](examples/cart/README.md) · [Validación](docs/validation.md)
 
 Un conjunto de 12 skills para desarrollo de software. Cada carpeta exportada incluye sus instrucciones, referencias y plantillas. Podés instalar las que necesites y combinarlas con el proceso de tu proyecto.
 

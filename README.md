@@ -2,7 +2,7 @@
 
 **Reusable skills for coding agents: define the work, resume with context, and verify what shipped.**
 
-[Español](README.es.md) · [Installation](docs/installation.md) · [Try the demo](examples/cart/README.md) · [Validation](docs/validation.md) · [MIT License](LICENSE)
+[Español](README.es.md) · [Download v0.1.0](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.0) · [Installation](docs/installation.md) · [Try the demo](examples/cart/README.md) · [Validation](docs/validation.md) · [MIT License](LICENSE)
 
 Agent Workflow Skills is a collection of 12 focused instructions for everyday software work. Each exported skill carries its own references and templates. Use one skill for a specific task, or combine them around your existing development process.
 

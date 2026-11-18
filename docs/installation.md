@@ -4,6 +4,8 @@ The repository contains skill **sources**. Export them first: the exporter rewri
 
 ## Export
 
+You can also download the pre-exported ZIP from [release v0.1.0](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.0). Extract it into a new directory: it contains the complete skill folders and integrity manifest. The source checkout is needed only if you want to regenerate the bundle or run the verifier. A SHA-256 checksum file accompanies the ZIP.
+
 From the repository root, with Python 3.9+:
 
 ```sh
