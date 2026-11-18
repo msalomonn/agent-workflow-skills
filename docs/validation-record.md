@@ -1,5 +1,7 @@
 # Initial validation record
 
+Historical record: the subsequent [readiness review](validation-runs/2026-11-18.md) adds independent behavioral evaluation and native discovery results.
+
 Date: 2026-11-18. Package: 0.1.0.
 
 This file records local checks performed while preparing the initial repository. Hosted CI results are tracked separately by commit in GitHub Actions.

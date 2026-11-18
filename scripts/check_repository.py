@@ -8,10 +8,17 @@ import tempfile
 from export_skills import ROOT, catalog, check_links, export, verify
 
 
+def repository_markdown(root):
+    """Check maintained documentation, not local notes, environments, or old exports."""
+    yield from root.glob('*.md')
+    for directory in ('skills', 'workflow', 'docs', 'examples'):
+        yield from (root / directory).rglob('*.md')
+
+
 def main():
     names = catalog(ROOT)
     # The source docs use local inline links; validate those as well as exports.
-    check_links(ROOT)
+    check_links(ROOT, paths=repository_markdown(ROOT))
     with tempfile.TemporaryDirectory() as temporary:
         bundle = export(Path(temporary) / 'bundle')
         verify(bundle)

@@ -2,7 +2,7 @@
 
 **Reusable skills for coding agents: define the work, resume with context, and verify what shipped.**
 
-[Español](README.es.md) · [Download v0.1.0](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.0) · [Installation](docs/installation.md) · [Try the demo](examples/cart/README.md) · [Validation](docs/validation.md) · [MIT License](LICENSE)
+[Español](README.es.md) · [Download v0.1.1](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.1) · [Installation](docs/installation.md) · [Try the demo](examples/cart/README.md) · [Validation](docs/validation.md) · [MIT License](LICENSE)
 
 Agent Workflow Skills is a collection of 12 focused instructions for everyday software work. Each exported skill carries its own references and templates. Use one skill for a specific task, or combine them around your existing development process.
 
@@ -58,7 +58,7 @@ A typical feature might use spec → plan → execute → audit → verify. A cl
 - **Tools remain yours.** GitHub-specific operations use an available connector or CLI. Other skills can work locally.
 - **Permissions remain explicit.** Instructions do not grant credentials or replace the agent host's controls. Existing user authorization is reused.
 
-This is an instruction toolkit, not an autonomous service, an enforcement system, or a model. Results depend on the agent, tools, repository, and task. Version 0.1.0 includes package integrity checks and evaluation scenarios; it does not claim a measured productivity improvement or universal client compatibility. See [validation and limits](docs/validation.md).
+This is an instruction toolkit, not an autonomous service, an enforcement system, or a model. Results depend on the agent, tools, repository, and task. Version 0.1.1 includes 21 package tests, observations from four independent agent sessions covering all 12 skills, and a native Codex discovery check. These results do not establish a measured productivity improvement or universal client compatibility. See [validation and limits](docs/validation.md).
 
 ## Develop and contribute
 
