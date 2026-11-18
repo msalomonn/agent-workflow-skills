@@ -1,0 +1,30 @@
+# Validation and limits
+
+Version 0.1.0 separates three kinds of evidence.
+
+## Automated package checks
+
+Run `python3 scripts/check_repository.py`. This validates the repository's constrained frontmatter format, skill names, local inline Markdown resource links, export completeness, and the package tests.
+
+The tests exercise:
+
+- Independent all-skill and selected-skill exports after removing the source checkout.
+- Included helpers, data files, client metadata, executable permissions, and license files.
+- Protection of existing destinations, including dangling symbolic links.
+- Rejection of source symlinks, reserved-path collisions, unrecognized skill-root files, missing references, and escaping resource paths.
+- Detection of changed, missing, or additional exported files against the manifest.
+- Command-line export and verification behavior.
+
+The exporter uses Python's standard library and does not fetch external links. Local runs are recorded in [the initial validation record](validation-record.md); GitHub Actions runs the same package checks on Python 3.9 and 3.13. A configured workflow is not evidence of a passing hosted run; inspect the actual Actions result for the commit you use.
+
+## Reproducible fixture
+
+The [cart exercise](../examples/cart/README.md) deliberately fails two of four tests before its correction. It supplies concrete acceptance cases for debugging and continuation. Its tests are separate from package CI because preserving the broken fixture is intentional.
+
+A deterministic before/after run verifies that the fixture detects its bug. It does not measure whether a fresh agent chooses the right actions.
+
+## Agent behavior and compatibility
+
+[Twelve evaluation scenarios](evaluations.md) cover the skills' intended decisions. They are provided for behavioral testing and are not reported as completed independent-agent evaluations in this release. Frontmatter checks cannot establish prompt quality, discovery in a desktop client, or safe handling of every task.
+
+No cross-provider end-to-end compatibility claim or productivity benchmark is made. The installation guide documents the Codex project path from official documentation; discovery and actual behavior should be checked in the intended client. Instructions support an existing model and tools; they do not enforce permissions or guarantee outcomes.
