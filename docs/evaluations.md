@@ -1,6 +1,6 @@
 # Behavioral evaluation scenarios
 
-Package tests establish file integrity, not agent behavior. Use these scenarios to evaluate instruction changes with the actual client and model you intend to support. The scenarios below are a test plan, not a claim that independent agents have passed them.
+Package tests establish file integrity, not agent behavior. Use these scenarios to evaluate instruction changes with the actual client and model you intend to support. The scenarios below are an ongoing test plan. The [2026-11-18 run](validation-runs/2026-11-18.md) records completed observations and the specific variants exercised; it does not establish that every variation below was tested.
 
 Use an isolated local repository with synthetic data. Supply the user request and raw artifacts; keep the expected behavior outside the evaluated agent's prompt when an independent evaluator is available and authorized. Do not grant remote mutation rights solely to run an evaluation. For remote scenarios, use recorded synthetic responses or a dedicated test repository with explicit scope.
 

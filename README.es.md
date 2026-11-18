@@ -2,7 +2,7 @@
 
 **Skills reutilizables para agentes de programación: definir el trabajo, retomarlo con contexto y verificar lo entregado.**
 
-[English](README.md) · [Descargar v0.1.0](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.0) · [Instalación](docs/installation.md) · [Demo local](examples/cart/README.md) · [Validación](docs/validation.md)
+[English](README.md) · [Descargar v0.1.1](https://github.com/msalomonn/agent-workflow-skills/releases/tag/v0.1.1) · [Instalación](docs/installation.md) · [Demo local](examples/cart/README.md) · [Validación](docs/validation.md)
 
 Un conjunto de 12 skills para desarrollo de software. Cada carpeta exportada incluye sus instrucciones, referencias y plantillas. Podés instalar las que necesites y combinarlas con el proceso de tu proyecto.
 
@@ -58,6 +58,6 @@ La [demo del carrito](examples/cart/README.md) propone un bug reproducible para 
 python3 scripts/check_repository.py
 ```
 
-La versión 0.1.0 incluye pruebas del exportador y escenarios para evaluar el comportamiento de las skills. No promete compatibilidad universal ni una mejora de productividad medida. Consultá los [límites de validación](docs/validation.md) y la [guía de contribución](CONTRIBUTING.md).
+La versión 0.1.1 incluye 21 pruebas del paquete, cuatro sesiones independientes que ejercitaron las 12 skills y una comprobación de detección nativa en Codex. No promete compatibilidad universal ni una mejora de productividad medida. Consultá los [límites de validación](docs/validation.md) y la [guía de contribución](CONTRIBUTING.md).
 
 Creado por [Manuel Salomon](https://github.com/msalomonn). Podés usarlo, modificarlo y compartirlo bajo [licencia MIT](LICENSE).

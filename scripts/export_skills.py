@@ -58,10 +58,10 @@ def catalog(root):
     return names
 
 
-def check_links(folder):
+def check_links(folder, paths=None):
     """Validate local inline Markdown links in the package's simple link format."""
     boundary = folder.resolve()
-    for path in folder.rglob('*.md'):
+    for path in folder.rglob('*.md') if paths is None else paths:
         text = re.sub(r'```.*?```', '', path.read_text(encoding='utf-8'), flags=re.S)
         for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', text):
             parsed = urlsplit(link)
@@ -137,8 +137,12 @@ def verify(folder):
     folder = Path(folder)
     regular_tree(folder)
     data = json.loads((folder / MANIFEST).read_text(encoding='utf-8'))
-    if data.get('format') != 1 or not isinstance(data.get('sha256'), dict):
+    if (not isinstance(data, dict) or type(data.get('format')) is not int
+            or data['format'] != 1 or not isinstance(data.get('sha256'), dict)):
         raise ValueError('Unsupported manifest format')
+    version = data.get('version')
+    if not isinstance(version, str) or not re.fullmatch(r'\d+\.\d+\.\d+(?:-[a-zA-Z0-9.-]+)?', version):
+        raise ValueError('Invalid or missing manifest version')
     names = data.get('skills')
     if not isinstance(names, list) or not names or any(
         not isinstance(n, str) or not re.fullmatch(r'workflow-[a-z0-9]+(?:-[a-z0-9]+)*', n)

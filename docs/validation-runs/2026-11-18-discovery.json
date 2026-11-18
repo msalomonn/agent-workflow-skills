@@ -1,0 +1,93 @@
+{
+  "method": "skills/list",
+  "cli_version": "0.160.0",
+  "expected": [
+    "workflow-audit",
+    "workflow-debug",
+    "workflow-doctor",
+    "workflow-execute",
+    "workflow-github-status",
+    "workflow-handoff",
+    "workflow-plan",
+    "workflow-release",
+    "workflow-research",
+    "workflow-spec",
+    "workflow-triage",
+    "workflow-verify"
+  ],
+  "discovered": [
+    {
+      "name": "workflow-audit",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-debug",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-doctor",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-execute",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-github-status",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-handoff",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-plan",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-release",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-research",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-spec",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-triage",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    },
+    {
+      "name": "workflow-verify",
+      "enabled": true,
+      "scope": "repo",
+      "project_path_matches": true
+    }
+  ],
+  "relevant_errors": []
+}
